@@ -36,7 +36,7 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
-.wrapper{
+.wrapper {
   height: 100vh;
 }
 
@@ -560,14 +560,17 @@ section {
   padding: 40px;
 }
 
-.about h3, .section-header h3  {
+.about h3,
+.section-header h3 {
 
   font-weight: 700;
   color: #4154f1;
   text-transform: uppercase;
 }
 
-.about h2, .section-header h2, .contact h2 {
+.about h2,
+.section-header h2,
+.contact h2 {
   font-size: 24px;
   font-weight: 700;
   color: #012970;
@@ -759,7 +762,7 @@ section {
 }
 
 .features .feature-icons {
-  margin-top: 120px;
+  margin: 60px 0;
 }
 
 .features .feature-icons h3 {
@@ -2346,7 +2349,7 @@ section {
   font-family: "Nunito", sans-serif;
 }
 
- .social-links a {
+.social-links a {
   font-size: 20px;
   display: inline-block;
   color: rgba(1, 41, 112, 0.5);
