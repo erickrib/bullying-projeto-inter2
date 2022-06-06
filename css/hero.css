@@ -56,7 +56,7 @@ section {
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
-  font-size: 38px;
+  font-size: 1.5rem;
   line-height: 42px;
   font-weight: 700;
   color: #012970;
@@ -1554,6 +1554,7 @@ section {
   overflow: hidden;
   margin: -30px -30px 15px -30px;
   position: relative;
+  max-height: 228px;
 }
 
 .recent-blog-posts .post-box .post-img img {
@@ -1569,7 +1570,7 @@ section {
 }
 
 .recent-blog-posts .post-box .post-title {
-  font-size: 24px;
+  font-size: 1.2rem;
   color: #012970;
   font-weight: 700;
   margin-bottom: 18px;
