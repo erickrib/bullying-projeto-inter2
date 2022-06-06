@@ -1390,9 +1390,6 @@ section {
   background-color: #4154f1;
 }
 
-.testimonials .swiper-slide {
-  opacity: 0.3;
-}
 
 @media (max-width: 1199px) {
   .testimonials .swiper-slide-active {
