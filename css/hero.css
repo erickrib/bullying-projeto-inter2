@@ -247,6 +247,9 @@ section {
   overflow-y: auto;
 }
 
+.custom-file-label::after{
+  display: none;
+}
 
 /*--------------------------------------------------------------
 # Hero Section

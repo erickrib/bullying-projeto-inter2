@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
@@ -19,6 +19,8 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
 
 </head>
 
@@ -34,50 +36,85 @@
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                                <h1 class="h4 text-gray-900 mb-4">Denúnciar Bullying!</h1>
                             </div>
-                            <form class="user">
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
-                                            placeholder="First Name">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
-                                            placeholder="Last Name">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                                        placeholder="Email Address">
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="Password">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <input type="password" class="form-control form-control-user"
-                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                            <form class="needs-validation" novalidate>
+                                <div class="form-row">
+                                    <p class=" w-100 d-block text-center ">Efetuar denúncia de forma anônima?</p>
+                                    <div class="d-flex justify-content-center w-100">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input"
+                                                id="customControlValidation2" name="radio-stacked" required>
+                                            <label class="custom-control-label mr-3"
+                                                for="customControlValidation2">Sim</label>
+                                        </div>
+                                        <div style="position: relative;" class="custom-control custom-radio mb-3">
+                                            <input type="radio" class="custom-control-input"
+                                                id="customControlValidation3" name="radio-stacked" required>
+                                            <label class="custom-control-label"
+                                                for="customControlValidation3">Não</label>
+                                            <div style="position: absolute;
+                                            min-width: 250px; right: -4.5rem;" class="invalid-feedback">Escolha uma das opções antes de enviar</div>
+                                        </div>
                                     </div>
                                 </div>
-                                <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    Register Account
-                                </a>
-                                <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i> Register with Google
-                                </a>
-                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                </a>
+                                <div class="mb-3">
+                                    <label for="title">Título</label>
+                                    <input type="text" class="form-control" id="title">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea rows="8" class="form-control" id="validationTextarea"
+                                        placeholder="Digite uma mensagem..." required></textarea>
+                                    <div class="invalid-feedback">
+                                        Por favor, para continuar é necessário digitar uma mensagem!
+                                    </div>
+                                </div>
+                                <div class="custom-file mb-3">
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">
+                                        <i style="font-size: 1rem;" class="bi bi-paperclip text-primary"></i>
+                                        Adicionar Anexo</label>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="form-check text-center">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                            Estou ciente dos <a class="link-info" href="#">termos </a>e das <a
+                                                class="link-info" href="#">condições</a>
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            Aceite os termos e condições para continuar
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-danger mx-auto d-block" type="submit">Enviar Denúncia</button>
                             </form>
+
+                            <script>
+                                // Example starter JavaScript for disabling form submissions if there are invalid fields
+                                (function () {
+                                    'use strict';
+                                    window.addEventListener('load', function () {
+                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                                        var forms = document.getElementsByClassName('needs-validation');
+                                        // Loop over them and prevent submission
+                                        var validation = Array.prototype.filter.call(forms, function (
+                                            form) {
+                                            form.addEventListener('submit', function (event) {
+                                                if (form.checkValidity() === false) {
+                                                    event.preventDefault();
+                                                    event.stopPropagation();
+                                                }
+                                                form.classList.add('was-validated');
+                                            }, false);
+                                        });
+                                    }, false);
+                                })();
+                            </script>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="forgot-password.html">Forgot Password?</a>
-                            </div>
-                            <div class="text-center">
-                                <a class="small" href="login.html">Already have an account? Login!</a>
+                                <a class="small" href="#">Ainda com dúvidas? Clique aqui!</a>
                             </div>
                         </div>
                     </div>
