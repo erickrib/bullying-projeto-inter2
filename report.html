@@ -36,30 +36,106 @@
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Denúnciar Bullying!</h1>
+                                <h1 class="h4 font-weight-bold text-primary-900 mb-4">Denúnciar <span
+                                        class="text-danger">Bullying!</span></h1>
                             </div>
                             <form class="needs-validation" novalidate>
                                 <div class="form-row">
-                                    <p class=" w-100 d-block text-center ">Efetuar denúncia de forma anônima?</p>
-                                    <div class="d-flex justify-content-center w-100">
+                                    <p class="  font-weight-bold  w-100 d-block text-center ">Efetuar denúncia de forma
+                                        anônima?</p>
+                                    <div class="d-flex align-items-center justify-content-center w-100 mb-4">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input"
                                                 id="customControlValidation2" name="radio-stacked" required>
                                             <label class="custom-control-label mr-3"
                                                 for="customControlValidation2">Sim</label>
                                         </div>
-                                        <div style="position: relative;" class="custom-control custom-radio mb-3">
+                                        <div style="position: relative;" class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input"
                                                 id="customControlValidation3" name="radio-stacked" required>
                                             <label class="custom-control-label"
                                                 for="customControlValidation3">Não</label>
                                             <div style="position: absolute;
-                                            min-width: 250px; right: -4.5rem;" class="invalid-feedback">Escolha uma das opções antes de enviar</div>
+                                            min-width: 250px; right: -4.5rem;" class="invalid-feedback">Escolha uma das
+                                                opções antes de enviar</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label class="font-weight-bold" for="validationDate">Data</label>
+                                        <input type="date" class="form-control" id="validationDate"
+                                            aria-describedby="validationServer03Feedback" required>
+                                        <div class="invalid-feedback">
+                                            Selecione uma Data.
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-3">
+                                        <label class="font-weight-bold" for="validationTime">Hora</label>
+                                        <input type="time" class="form-control" id="validationTime"
+                                            aria-describedby="validationServer03Feedback" required>
+                                        <div class="invalid-feedback">
+                                            Selecione um Horário.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <p class="font-weight-bold  w-100 d-block">Local do ocorrido:</p>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlLocal0"
+                                                name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlLocal0">Pátio</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlLocal1"
+                                                name="radio-stacked" required>
+                                            <label class="custom-control-label"
+                                                for="customControlLocal1">Banheiro</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlLocal2"
+                                                name="radio-stacked" required>
+                                            <label class="custom-control-label"
+                                                for="customControlLocal2">Cantina</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlLocal3"
+                                                name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlLocal3">Sala de
+                                                aula</label>
+                                        </div>
+                                        <div class="custom-control custom-radio mb-3">
+                                            <input type="radio" class="custom-control-input" id="customControlLocal4"
+                                                name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlLocal4">Outro</label>
+                                            <div class="invalid-feedback">Escolha uma das
+                                                opções antes de enviar</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="  font-weight-bold  w-100 d-block">Sua situação diante do ocorrido:
+                                        </p>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlStatus0"
+                                                name="radio-stacked" required>
+                                            <label class="custom-control-label"
+                                                for="customControlStatus0">Vítima</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customControlStatus1"
+                                                name="radio-stacked" required>
+                                            <label class="custom-control-label" for="customControlStatus1">Presenciei o
+                                                acontecimento, mas não sou a vitima</label>
+                                                <div class="invalid-feedback">
+                                                    Escolha uma das opções para continuar
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="title">Título</label>
+                                    <label class=" font-weight-bold " for="title">Título</label>
                                     <input type="text" class="form-control" id="title">
                                 </div>
                                 <div class="mb-3">
