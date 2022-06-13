@@ -98,7 +98,7 @@
 
 
         <!-- Content Wrapper -->
-        <div id="content-wrapper" class="d-flex flex-column">
+        <div style="overflow-y: hidden;" id="content-wrapper" class="d-flex flex-column">
 
             <!-- Main Content -->
             <div id="content">
@@ -237,10 +237,10 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
+                <div style=" height: 97%;" class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <div class="d-sm-flex align-items-center justify-content-between mb-3">
                         <h1 class="h3 mb-0 text-gray-800">Denúncias</h1>
                     </div>
                     <!-- Topbar Search -->
@@ -256,34 +256,67 @@
                         </div>
                     </form>
 
-                    <ul class="nav nav-pills mb-3 justify-content-around" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all"
-                                role="tab" aria-controls="pills-home" aria-selected="true">Todas</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                role="tab" aria-controls="pills-home" aria-selected="true">Em andamento</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                                role="tab" aria-controls="pills-profile" aria-selected="false">Em análise</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
-                                role="tab" aria-controls="pills-contact" aria-selected="false">Concluídas</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab">...</div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">...</div>
-                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                            aria-labelledby="pills-contact-tab">...</div>
+                    <div class="h-100" style="max-width: 70%; margin: 0 auto;">
+                        <ul class="nav nav-pills mb-3 justify-content-around" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all"
+                                    role="tab" aria-controls="pills-home" aria-selected="true">Todas</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                                    aria-controls="pills-home" aria-selected="true">Em andamento</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                    role="tab" aria-controls="pills-profile" aria-selected="false">Em análise</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                    role="tab" aria-controls="pills-contact" aria-selected="false">Concluídas</a>
+                            </li>
+                        </ul>
+                        <div style="height: 59%!important;" class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
+                                aria-labelledby="pills-all-tab">
+                                <div class="card mb-4">
+                                    <div style="padding: 5px 20px;"
+                                        class="card-header justify-content-between align-items-center d-flex">
+                                        <h6 class="card-title m-0"><strong>Título: </strong>Caso de Bullying no Pátio
+                                        </h6>
+                                        <button style="padding: 0 5px;" type="button"
+                                            class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
+                                        <ul style="min-width: 8rem;" class="dropdown-menu">
+                                            <!-- Dropdown menu links -->
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-trash"></i>
+                                                    Excluir</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="bi bi-pencil"></i>
+                                                    Editar</a></li>
+                                        </ul>
+                                    </div>
+                                    <div style="padding: 0.5rem 1.5rem;" class="card-body">
+                                        <p><strong>Descrição: </strong> Durante o intervalo fui vitima de comentários
+                                            maldosos onde 2 alunos me cercaram e comecaram a me humillhar por conta do
+                                            meu cabelo... <a style="text-decoration: underline; cursor: pointer;"
+                                                class="link-info">Ver Mais</a> <br>
+                                            <strong>Status: </strong><span class="text-danger">Em andamento</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade text-center" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">...</div>
+                            <div class="tab-pane fade text-center" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">...</div>
+                            <div class="tab-pane fade text-center" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">...</div>
+                        </div>
                     </div>
 
-
+                    <button type="button" class="btn btn-danger d-block"
+                        style="position: absolute; top: 89%; left: 80%;">Efetuar Denúncia <i
+                            class="bi bi-pencil-fill"></i></button>
                 </div>
                 <!-- /.container-fluid -->
 
@@ -291,7 +324,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <footer class="sticky-footer bg-white">
+            <footer style="padding: 0.5rem 0;" class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>Copyright &copy; Your Website 2021</span>
