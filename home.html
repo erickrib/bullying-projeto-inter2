@@ -22,6 +22,7 @@
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.css">
     <link href="vendor/aos/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hero.css">
     <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 </head>
@@ -109,20 +110,6 @@
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
-
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Busca..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button">
-                                    <i class="fas fa-search fa-sm"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -254,11 +241,47 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Tela Inicial</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <h1 class="h3 mb-0 text-gray-800">Denúncias</h1>
                     </div>
+                    <!-- Topbar Search -->
+                    <form style="max-width: 40%;" class="mx-auto navbar-search mb-4 ">
+                        <div class="input-group">
+                            <input type="text" class="form-control  border-0 small" placeholder="Buscar..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
 
+                    <ul class="nav nav-pills mb-3 justify-content-around" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all"
+                                role="tab" aria-controls="pills-home" aria-selected="true">Todas</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                role="tab" aria-controls="pills-home" aria-selected="true">Em andamento</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                role="tab" aria-controls="pills-profile" aria-selected="false">Em análise</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                role="tab" aria-controls="pills-contact" aria-selected="false">Concluídas</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab">...</div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">...</div>
+                    </div>
 
 
                 </div>
@@ -313,7 +336,8 @@
         <div style="height: 100vh; margin: 0;" class="modal-dialog ml-auto" role="document">
             <div style="height: 100vh" class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Chat de Mensagem com o(a) Piscólogo(a) <i style="font-size: 1rem;" class="bi bi-circle-fill text-success"></i></h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle">Chat de Mensagem com o(a) Piscólogo(a) <i
+                            style="font-size: 1rem;" class="bi bi-circle-fill text-success"></i></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -321,11 +345,14 @@
                 <div class="modal-body">
                     <!-- Messages-->
                     <div class="alert alert-warning" style="font-size: .8rem;" role="alert">
-                        Converse de forma anônima com um(a) Psicólogo(a). Aqui você pode obter ajuda psicológica e aconselhamento terapêutico de psicólogos qualificados. <a href="#" class="alert-link">Saiba Mais</a>
-                      </div>
+                        Converse de forma anônima com um(a) Psicólogo(a). Aqui você pode obter ajuda psicológica e
+                        aconselhamento terapêutico de psicólogos qualificados. <a href="#" class="alert-link">Saiba
+                            Mais</a>
+                    </div>
                     <div class="d-flex align-items-end justify-content-start mb-4 flex-wrap">
                         <div class="d-flex justify-content-start flex-column align-items-start col">
-                            <small class="text-muted fs-xs fw-bolder"><span class="fw-bold">Psicólogo(a)</span> &middot; 2 mins hoje</small>
+                            <small class="text-muted fs-xs fw-bolder"><span class="fw-bold">Psicólogo(a)</span> &middot;
+                                2 mins hoje</small>
                             <div class="bg-light p-3 mt-2 rounded">
                                 Olá, em que posso ajudar?
                             </div>
@@ -345,7 +372,8 @@
                     </div>
                     <div class="d-flex align-items-end justify-content-start mb-4 flex-wrap">
                         <div class="d-flex justify-content-start flex-column align-items-start col">
-                            <small class="text-muted fs-xs fw-bolder"><span class="fw-bold">Psicólogo(a)</span> &middot; 25 mins hoje</small>
+                            <small class="text-muted fs-xs fw-bolder"><span class="fw-bold">Psicólogo(a)</span> &middot;
+                                25 mins hoje</small>
                             <div class="bg-light p-3 mt-2 rounded">
                                 Tudo bem, fique a vontade.
                             </div>
@@ -366,6 +394,7 @@
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
