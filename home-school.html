@@ -11,7 +11,7 @@
 
     <title>DeBullying</title>
 
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">    <!-- Custom fonts for this template-->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
@@ -38,7 +38,8 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-text mx-3 w-100">
-                    <img style=" object-fit: cover; height: 105px;" class="w-100" src="img/debullying-logo.png" alt="deBullying">
+                    <img style=" object-fit: cover; height: 105px;" class="w-100" src="img/debullying-logo.png"
+                        alt="deBullying">
 
                 </div>
             </a>
@@ -278,10 +279,11 @@
                                     role="tab" aria-controls="pills-contact" aria-selected="false">Concluídas</a>
                             </li>
                         </ul>
-                        <div style="height: 59%!important;" class="tab-content" id="pills-tabContent">
+                        <div style="height: 59%!important; " class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-all" role="tabpanel"
                                 aria-labelledby="pills-all-tab">
-                                <div class="card mb-4">
+                                <div style="cursor: pointer;" data-toggle="modal" data-target="#detaisModal"
+                                    class="card mb-4">
                                     <div style="padding: 5px 20px;"
                                         class="card-header justify-content-between align-items-center d-flex">
                                         <h6 class="card-title m-0"><strong>Título: </strong>Caso de Bullying no Pátio
@@ -302,7 +304,8 @@
                                     <div style="padding: 0.5rem 1.5rem;" class="card-body">
                                         <p><strong>Descrição: </strong> Durante o intervalo fui vitima de comentários
                                             maldosos onde 2 alunos me cercaram e comecaram a me humillhar por conta do
-                                            meu cabelo... <a style="text-decoration: underline; cursor: pointer;"
+                                            meu cabelo... <a data-toggle="modal" data-target="#detaisModal"
+                                                style="text-decoration: underline; cursor: pointer;"
                                                 class="link-info">Ver Mais</a> <br>
                                             <strong>Status: </strong><span class="text-danger">Em andamento</span></p>
                                     </div>
@@ -317,7 +320,8 @@
                         </div>
                     </div>
 
-                    <a href="report.html" class="btn btn-danger d-block" style="position: absolute; top: 89%; left: 80%;">Efetuar Denúncia
+                    <a href="report.html" class="btn btn-danger d-block"
+                        style="position: absolute; top: 89%; left: 80%;">Efetuar Denúncia
                         <i class="bi bi-pencil-fill"></i></a>
                 </div>
                 <!-- /.container-fluid -->
@@ -420,6 +424,125 @@
                     <input style="background-color: #4e73df3d;" type="text"
                         class="form-control d-flex w-100 border-0 text-muted" placeholder="Digite uma Mensagem...">
                     <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal detalhes da Denúncia -->
+    <div class="modal fade" id="detaisModal" tabindex="-1" role="dialog" aria-labelledby="detaisModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><span class="font-weight-bold">Título:</span> Caso de
+                        Bullying no Pátio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class=" mx-auto d-flex justify-content-center">
+                            <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Status:</label>
+                            <input readonly style="max-width: 180px" value="Em andamento" type="text"
+                                class="form-control text-danger" id="recipient-name">
+                        </div>
+                        <div style="background-color: transparent;" class=" mt-3 input-group w-50 mx-auto justify-content-center">
+                            <span class="input-group-text" id="basic-addon1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-incognito" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="m4.736 1.968-.892 3.269-.014.058C2.113 5.568 1 6.006 1 6.5 1 7.328 4.134 8 8 8s7-.672 7-1.5c0-.494-1.113-.932-2.83-1.205a1.032 1.032 0 0 0-.014-.058l-.892-3.27c-.146-.533-.698-.849-1.239-.734C9.411 1.363 8.62 1.5 8 1.5c-.62 0-1.411-.136-2.025-.267-.541-.115-1.093.2-1.239.735Zm.015 3.867a.25.25 0 0 1 .274-.224c.9.092 1.91.143 2.975.143a29.58 29.58 0 0 0 2.975-.143.25.25 0 0 1 .05.498c-.918.093-1.944.145-3.025.145s-2.107-.052-3.025-.145a.25.25 0 0 1-.224-.274ZM3.5 10h2a.5.5 0 0 1 .5.5v1a1.5 1.5 0 0 1-3 0v-1a.5.5 0 0 1 .5-.5Zm-1.5.5c0-.175.03-.344.085-.5H2a.5.5 0 0 1 0-1h3.5a1.5 1.5 0 0 1 1.488 1.312 3.5 3.5 0 0 1 2.024 0A1.5 1.5 0 0 1 10.5 9H14a.5.5 0 0 1 0 1h-.085c.055.156.085.325.085.5v1a2.5 2.5 0 0 1-5 0v-.14l-.21-.07a2.5 2.5 0 0 0-1.58 0l-.21.07v.14a2.5 2.5 0 0 1-5 0v-1Zm8.5-.5h2a.5.5 0 0 1 .5.5v1a1.5 1.5 0 0 1-3 0v-1a.5.5 0 0 1 .5-.5Z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <input style="font-size: .7rem; background-color: transparent; border: none; max-width: 150px;" readonly type="text" class="form-control" value="Mensagem Anônima"
+                                aria-label="Input group example" aria-describedby="basic-addon1">
+                        </div>
+                        <div style="column-gap:5px;" class=" mx-auto d-flex mt-3">
+                            <div class=" mx-auto d-flex col-lg-6">
+                                <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Data:</label>
+                                <input readonly style="max-width: 180px" value="14/06/2022" type="text"
+                                    class="form-control text-info" id="recipient-name">
+                            </div>
+                            <div class=" mx-auto d-flex col-lg-6 ">
+                                <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Hora:</label>
+                                <input readonly style="max-width: 180px" value="10:00" type="text"
+                                    class="form-control text-info" id="recipient-name">
+                            </div>
+                        </div>
+                        <div style="column-gap:5px;" class=" mx-auto d-flex mt-3">
+                            <div class=" mx-auto d-flex col-lg-6">
+                                <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Local:</label>
+                                <input readonly style="max-width: 180px" value="Pátio" type="text"
+                                    class="form-control text-info" id="recipient-name">
+                            </div>
+                            <div class=" mx-auto d-flex col-lg-6 ">
+                                <label for="recipient-name"
+                                    class="col-form-label mr-3 font-weight-bold">Situação:</label>
+                                <input readonly style="max-width: 180px" value="Vítima" type="text"
+                                    class="form-control text-info" id="recipient-name">
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <label for="message-text" class="col-form-label font-weight-bold">Descrição:</label>
+                            <textarea readonly rows="8" class="form-control text-justify" id="message-text">Durante o intervalo fui vitima de comentários maldosos onde 2 alunos da turma 302 me cercaram  a comecaram a me humillhar por conta do meu cabelo...
+                  </textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button data-dismiss="modal" data-toggle="modal" data-target="#feedbackModal" type="button"
+                        class="btn btn-primary">Fornecer Feedback</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal feedback -->
+    <div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="detaisModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"><span class="font-weight-bold">Feedback:</span> Caso
+                        de Bullying no Pátio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class=" mx-auto d-flex justify-content-center">
+                            <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Status:</label>
+                            <input readonly style="max-width: 180px" value="Em análise" type="text"
+                                class="form-control text-warning" id="recipient-name">
+                        </div>
+                        <div style="column-gap:5px;" class=" mx-auto d-flex mt-3">
+                            <div class=" mx-auto d-flex col-lg-6">
+                                <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Data:</label>
+                                <input readonly style="max-width: 180px" value="14/06/2022" type="text"
+                                    class="form-control text-info" id="recipient-name">
+                            </div>
+                            <div class=" mx-auto d-flex col-lg-6 ">
+                                <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Hora:</label>
+                                <input readonly style="max-width: 180px" value="10:00" type="text"
+                                    class="form-control text-info" id="recipient-name">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="message-text" class="col-form-label font-weight-bold">Escreva uma
+                                mensagem:</label>
+                            <textarea rows="8" class="form-control text-justify" id="message-text">
+                  </textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Enviar Feedback</button>
                 </div>
             </div>
         </div>
