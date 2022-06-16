@@ -235,6 +235,10 @@ section {
   color: #e74a3b;
 }
 
+#pills-not-solved{
+  color: #96332a;
+}
+
 .dropdown-toggle-split::after {
   display: none;
 }
