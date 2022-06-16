@@ -34,7 +34,7 @@ h6 {
 }
 
 .box-mensagem {
-  background: rgb(47 95 167 / 82%);
+  background: rgb(0 0 0 / 82%);
   color: white;
   border-radius: 10px;
   font-size: 1.65rem;
@@ -44,6 +44,7 @@ h6 {
 
 .box-mensagem h1{
   font-size: 1.5rem;
+  line-height: 2.2rem;
 }
 
 .bg-body{

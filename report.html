@@ -35,8 +35,8 @@
                 <div class="row">
                     <div class="col-lg-5 d-none d-lg-block bg-register-image">
                         <div class="box-mensagem shadow-lg">
-                            <h1 class="text-black-500 text-center">Aqui você pode relatar de forma prática, segura e com total sigilo as ocorrências de Bullying sofridas e seus sentimentos. <br> Não fique calado(a), denuncie!</h1> 
-                        </div>
+                            <h1 class="text-black-500 text-center">Aqui você pode relatar de forma prática, segura e com total sigilo as ocorrências de Bullying sofridas e seus sentimentos. <br> Não fique calado(a),<span class="text-danger font-weight-bold"> DENUNCIE!</span></h1> 
+                        </div> 
                     </div>
                     <div class="col-lg-7">
                         <div class="p-5">
@@ -131,18 +131,34 @@
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="customControlStatus1"
                                                 name="customControlStatus" required>
-                                            <label class="custom-control-label" for="customControlStatus1">Presenciei o
-                                                acontecimento, mas não sou a vitima</label>
+                                            <label class="custom-control-label" for="customControlStatus1">Espectador</label>
                                                 <div class="invalid-feedback">
                                                     Escolha uma das opções para continuar
                                                 </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label class=" font-weight-bold " for="title">Título</label>
-                                    <input type="text" class="form-control" id="title">
-                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select font-weight-bold" required>
+                                      <option class="" value="">Selecione o tipo de agressão</option>
+                                      <option value="1">Verbal</option>
+                                      <option value="2">Física</option>
+                                      <option value="3">Moral</option>
+                                      <option value="4">Social</option>
+                                      <option value="5">Escrita</option>
+                                      <option value="6">Material</option>
+                                      <option value="7">Sexual</option>
+                                      <option value="8">Cyberbullying</option>
+                                    </select>
+                                    <div class="invalid-feedback">Selecione uma das opções antes de enviar</div>
+                                  </div>
+                                  <div class="mb-3">
+                                    <label class="font-weight-bold" for="validationTitle">Título</label>
+                                    <input type="text" class="form-control" id="validationTitle" required>
+                                    <div class="invalid-feedback">
+                                      Por favor, escreva um título para a denúncia
+                                    </div>
+                                  </div>
                                 <div class="mb-3">
                                     <textarea rows="8" class="form-control" id="validationTextarea"
                                         placeholder="Digite uma mensagem..." required></textarea>
