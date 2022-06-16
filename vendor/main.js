@@ -77,19 +77,21 @@
 
   const buttonEdit = document.getElementsByClassName('edit-button')[0]
 
-  buttonEdit.addEventListener('click', () => {
-    let textarea = document.getElementsByClassName('text-area')[0]
-    
-    if (buttonEdit.innerHTML === 'Editar') {
-      textarea.removeAttribute("readonly")
-      buttonEdit.innerHTML = 'Salvar'
-      buttonEdit.classList.add("bg-success")
-    } else {
-      textarea.setAttribute("readonly", true)
-      buttonEdit.innerHTML = 'Editar'
-      buttonEdit.classList.remove("bg-success")
-    }
-  })
+  if (buttonEdit) {
+    buttonEdit.addEventListener('click', () => {
+      let textarea = document.getElementsByClassName('text-area')[0]
+
+      if (buttonEdit.innerHTML === 'Editar') {
+        textarea.removeAttribute("readonly")
+        buttonEdit.innerHTML = 'Salvar'
+        buttonEdit.classList.add("bg-success")
+      } else {
+        textarea.setAttribute("readonly", true)
+        buttonEdit.innerHTML = 'Editar'
+        buttonEdit.classList.remove("bg-success")
+      }
+    })
+  }
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled

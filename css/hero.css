@@ -1,10 +1,3 @@
-/**
-* Template Name: FlexStart - v1.9.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -38,6 +31,27 @@ h6 {
 
 .wrapper {
   height: 100vh;
+}
+
+.box-mensagem {
+  background: rgb(47 95 167 / 82%);
+  color: white;
+  border-radius: 10px;
+  font-size: 1.65rem;
+  margin: 10%;
+  padding: 10px;
+}
+
+.box-mensagem h1{
+  font-size: 1.5rem;
+}
+
+.bg-body{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(https://img.freepik.com/free-vector/comic-style-background_23-2148836600.jpg?t=st=1655410999~exp=1655411599~hmac=14dacc1…&w=740);
+  background-color: #024ed5;
+  background-size: cover;
+  background-color: #024ed5;
+  background-size: cover;
 }
 
 /*--------------------------------------------------------------
@@ -209,19 +223,19 @@ section {
   border-radius: 0;
 }
 
-#pills-contact-tab{
+#pills-contact-tab {
   color: #08da4e;
 }
 
-#pills-profile-tab{
+#pills-profile-tab {
   color: #ffc107;
 }
 
-#pills-home-tab{
+#pills-home-tab {
   color: #e74a3b;
 }
 
-.dropdown-toggle-split::after{
+.dropdown-toggle-split::after {
   display: none;
 }
 
@@ -247,7 +261,7 @@ section {
   overflow-y: auto;
 }
 
-.custom-file-label::after{
+.custom-file-label::after {
   display: none;
 }
 

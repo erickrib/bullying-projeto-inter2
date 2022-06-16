@@ -25,7 +25,7 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-body">
 
     <div class="container">
 
@@ -33,7 +33,11 @@
             <div class="card-body p-0">
                 <!-- Nested Row within Card Body -->
                 <div class="row">
-                    <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+                    <div class="col-lg-5 d-none d-lg-block bg-register-image">
+                        <div class="box-mensagem shadow-lg">
+                            <h1 class="text-black-500 text-center">Aqui você pode relatar de forma prática, segura e com total sigilo as ocorrências de Bullying sofridas e seus sentimentos. <br> Não fique calado(a), denuncie!</h1> 
+                        </div>
+                    </div>
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
@@ -47,13 +51,13 @@
                                     <div class="d-flex align-items-center justify-content-center w-100 mb-4">
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input"
-                                                id="customControlValidation2" name="radio-stacked" required>
+                                                id="customControlValidation2" name="customControlValidation" required>
                                             <label class="custom-control-label mr-3"
                                                 for="customControlValidation2">Sim</label>
                                         </div>
                                         <div style="position: relative;" class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input"
-                                                id="customControlValidation3" name="radio-stacked" required>
+                                                id="customControlValidation3" name="customControlValidation" required>
                                             <label class="custom-control-label"
                                                 for="customControlValidation3">Não</label>
                                             <div style="position: absolute;
@@ -86,30 +90,30 @@
                                         <p class="font-weight-bold  w-100 d-block">Local do ocorrido:</p>
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="customControlLocal0"
-                                                name="radio-stacked" required>
+                                                name="customControlLocal" required>
                                             <label class="custom-control-label" for="customControlLocal0">Pátio</label>
                                         </div>
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="customControlLocal1"
-                                                name="radio-stacked" required>
+                                                name="customControlLocal" required>
                                             <label class="custom-control-label"
                                                 for="customControlLocal1">Banheiro</label>
                                         </div>
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="customControlLocal2"
-                                                name="radio-stacked" required>
+                                                name="customControlLocal" required>
                                             <label class="custom-control-label"
                                                 for="customControlLocal2">Cantina</label>
                                         </div>
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="customControlLocal3"
-                                                name="radio-stacked" required>
+                                                name="customControlLocal" required>
                                             <label class="custom-control-label" for="customControlLocal3">Sala de
                                                 aula</label>
                                         </div>
                                         <div class="custom-control custom-radio mb-3">
                                             <input type="radio" class="custom-control-input" id="customControlLocal4"
-                                                name="radio-stacked" required>
+                                                name="customControlLocal" required>
                                             <label class="custom-control-label" for="customControlLocal4">Outro</label>
                                             <div class="invalid-feedback">Escolha uma das
                                                 opções antes de enviar</div>
@@ -120,13 +124,13 @@
                                         </p>
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="customControlStatus0"
-                                                name="radio-stacked" required>
+                                                name="customControlStatus" required>
                                             <label class="custom-control-label"
                                                 for="customControlStatus0">Vítima</label>
                                         </div>
                                         <div class="custom-control custom-radio">
                                             <input type="radio" class="custom-control-input" id="customControlStatus1"
-                                                name="radio-stacked" required>
+                                                name="customControlStatus" required>
                                             <label class="custom-control-label" for="customControlStatus1">Presenciei o
                                                 acontecimento, mas não sou a vitima</label>
                                                 <div class="invalid-feedback">
@@ -167,28 +171,6 @@
                                 </div>
                                 <button class="btn btn-danger mx-auto d-block" type="submit">Enviar Denúncia</button>
                             </form>
-
-                            <script>
-                                // Example starter JavaScript for disabling form submissions if there are invalid fields
-                                (function () {
-                                    'use strict';
-                                    window.addEventListener('load', function () {
-                                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                                        var forms = document.getElementsByClassName('needs-validation');
-                                        // Loop over them and prevent submission
-                                        var validation = Array.prototype.filter.call(forms, function (
-                                            form) {
-                                            form.addEventListener('submit', function (event) {
-                                                if (form.checkValidity() === false) {
-                                                    event.preventDefault();
-                                                    event.stopPropagation();
-                                                }
-                                                form.classList.add('was-validated');
-                                            }, false);
-                                        });
-                                    }, false);
-                                })();
-                            </script>
                             <hr>
                             <div class="text-center">
                                 <a class="small" href="#">Ainda com dúvidas? Clique aqui!</a>
@@ -200,6 +182,27 @@
         </div>
 
     </div>
+    <script>
+        // Starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (
+                    form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
