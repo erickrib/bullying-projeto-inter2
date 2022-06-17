@@ -24,6 +24,7 @@
     <link href="vendor/aos/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/hero.css">
     <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hero.css">
 
 </head>
 
@@ -49,7 +50,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
-                <a class="nav-link" href="home.html">
+                <a class="nav-link" href="home-school.html">
                     <span>Início</span></a>
             </li>
 
@@ -163,9 +164,19 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <div class="small text-gray-500">16 de Junho, 2022</div>
-                                        <span class="font-weight-bold">Sua denúncia já foi analisada, confira agora o
-                                            feedback recebido!</span>
+                                        <div class="small text-gray-500">20 de Junho, 2022</div>
+                                        <span class="font-weight-bold">Levantamento estatístico do mês de Junho já está disponível, confira!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">15 de Junho, 2022</div>
+                                        Alerta: 5 novas denúncias recebidas, clique para conferir!
                                     </div>
                                 </a>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
@@ -180,31 +191,67 @@
                                         opinião é importante para nós.
                                     </div>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#">
-                                    <div class="mr-3">
-                                        <div class="icon-circle bg-warning">
-                                            <i class="fas fa-exclamation-triangle text-white"></i>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="small text-gray-500">10 de Junho, 2022</div>
-                                        Atenção, uma nova materia de orientação sobre bullying foi adicionada na seção
-                                        de conteúdos confira agora!
-                                    </div>
-                                </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todos os
-                                    alertas</a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                             </div>
                         </li>
 
                         <!-- Nav Item - Messages -->
                         <li class="nav-item dropdown no-arrow mx-1">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="modal" data-target="#chatModal">
-                                <i class="bi bi-chat-fill"></i>
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
                                 <!-- Counter - Messages -->
-                                <span class="badge badge-danger badge-counter">2</span>
+                                <span class="badge badge-danger badge-counter">4</span>
                             </a>
-
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Conversas
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#" data-toggle="modal" data-target="#chatModal">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg" alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Olá! Estou com alguns problemas</div>
+                                        <div class="small text-gray-500">Anônimo · 20m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#" data-toggle="modal" data-target="#chatModal">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg" alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Bom dia</div>
+                                        <div class="small text-gray-500">Anônimo · 3h</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#" data-toggle="modal" data-target="#chatModal">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg" alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Oie!</div>
+                                        <div class="small text-gray-500">Anônimo · 8h</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#" data-toggle="modal" data-target="#chatModal">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Boa tarde</div>
+                                        <div class="small text-gray-500">Anônimo · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Exibir todas as Mensagens</a>
+                            </div>
                         </li>
 
                         <div class="topbar-divider d-none d-sm-block"></div>
@@ -260,7 +307,7 @@
                         </div>
                     </form>
 
-                    <div class="h-100" style="max-width: 70%; margin: 0 auto;">
+                    <div class="h-100 container-denuncias rounded">
                         <ul class="nav nav-pills mb-3 justify-content-around" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all"
@@ -304,9 +351,8 @@
                                     <div style="padding: 0.5rem 1.5rem;" class="card-body">
                                         <p><strong>Descrição: </strong> Durante o intervalo fui vitima de comentários
                                             maldosos onde 2 alunos me cercaram e comecaram a me humillhar por conta do
-                                            meu cabelo... <a data-toggle="modal" data-target="#detaisModal"
-                                                style="text-decoration: underline; cursor: pointer;"
-                                                class="link-info">Ver Mais</a> <br>
+                                            meu cabelo...<a data-toggle="modal" data-target="#detaisModal"
+                                            style="text-decoration: underline; cursor: pointer; font-size: .8rem;" class="link-info font-weight-bold">Ver Mais</a> <br>
                                             <strong>Status: </strong><span class="text-danger">Em andamento</span></p>
                                     </div>
                                 </div>

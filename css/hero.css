@@ -42,17 +42,24 @@ h6 {
   padding: 10px;
 }
 
-.box-mensagem h1{
+.box-mensagem h1 {
   font-size: 1.5rem;
   line-height: 2.2rem;
 }
 
-.bg-body{
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url(https://img.freepik.com/free-vector/comic-style-background_23-2148836600.jpg?t=st=1655410999~exp=1655411599~hmac=14dacc1…&w=740);
+.bg-body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://img.freepik.com/free-vector/comic-style-background_23-2148836600.jpg?t=st=1655410999~exp=1655411599~hmac=14dacc1…&w=740);
   background-color: #024ed5;
   background-size: cover;
   background-color: #024ed5;
   background-size: cover;
+}
+
+.container-denuncias {
+  max-width: 70%;
+  margin: 0 auto;
+  background: #abc1ff38;
+  padding: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -236,7 +243,7 @@ section {
   color: #e74a3b;
 }
 
-#pills-not-solved{
+#pills-not-solved {
   color: #96332a;
 }
 
