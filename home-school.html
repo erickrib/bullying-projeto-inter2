@@ -295,9 +295,9 @@
                         <h1 class="h3 mb-0 text-gray-800">Denúncias</h1>
                     </div>
                     <!-- Topbar Search -->
-                    <form style="max-width: 40%;" class="mx-auto navbar-search mb-4 ">
+                    <form style="max-width: 40%;" class="mx-auto shadow navbar-search mb-4 ">
                         <div class="input-group">
-                            <input type="text" class="form-control  border-0 small" placeholder="Buscar..."
+                            <input type="text" class="form-control  border-0 small campos" placeholder="Buscar..."
                                 aria-label="Search" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button class="btn btn-primary" type="button">
@@ -565,27 +565,31 @@
                 </div>
                 <div class="modal-body">
                     <form>
-                        <div class=" mx-auto d-flex justify-content-center">
-                            <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Status:</label>
-                            <input readonly style="max-width: 180px" value="Em análise" type="text"
-                                class="form-control text-warning" id="recipient-name">
+                        <div class="mx-auto d-flex align-items-center justify-content-center">
+                            <label class="mr-2 font-weight-bold" for="status">Status: </label>
+                            <select id="status" class="custom-select font-weight-bold campos" required>
+                                <option class="text-danger" value="1">Em andamento</option>
+                                <option class="text-warning" value="2">Em análise</option>
+                                <option class="text-success" value="3">Concluída</option>
+                                <option class="text-danger" value="4">Não resolvida</option>
+                              </select>
                         </div>
                         <div style="column-gap:5px;" class=" mx-auto d-flex mt-3">
                             <div class=" mx-auto d-flex col-lg-6">
-                                <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Data:</label>
+                                <label for="recipient-date" class="col-form-label mr-3 font-weight-bold">Data:</label>
                                 <input readonly style="max-width: 180px" value="14/06/2022" type="text"
-                                    class="form-control text-info" id="recipient-name">
+                                    class="form-control text-info" id="recipient-date">
                             </div>
                             <div class=" mx-auto d-flex col-lg-6 ">
-                                <label for="recipient-name" class="col-form-label mr-3 font-weight-bold">Hora:</label>
+                                <label for="recipient-time" class="col-form-label mr-3 font-weight-bold">Hora:</label>
                                 <input readonly style="max-width: 180px" value="10:00" type="text"
-                                    class="form-control text-info" id="recipient-name">
+                                    class="form-control text-info" id="recipient-time">
                             </div>
                         </div>
                         <div class="form-group mt-3">
                             <label for="message-text" class="col-form-label font-weight-bold">Escreva uma
                                 mensagem:</label>
-                            <textarea rows="8" class="form-control text-justify" id="message-text">
+                            <textarea rows="8" class="form-control text-justify campos" id="message-text">
                   </textarea>
                         </div>
                     </form>
