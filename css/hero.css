@@ -34,12 +34,13 @@ h6 {
 }
 
 .box-mensagem {
-  background: rgb(0 0 0 / 82%);
-  color: white;
-  border-radius: 10px;
-  font-size: 1.65rem;
-  margin: 10%;
-  padding: 10px;
+  color: #001e54;
+    background-color: #eaecf46e;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    font-size: 1.65rem;
+    margin: 10%;
+    padding: 10px;
 }
 
 .box-mensagem h1 {
