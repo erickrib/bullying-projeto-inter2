@@ -62,8 +62,13 @@ h6 {
   padding: 10px;
 }
 
-.campos{
+.campos {
   background-color: #adb7e71f;
+}
+
+.three-musketeers-icon {
+  display: inline-block;
+  max-width: 50px;
 }
 
 /*--------------------------------------------------------------
