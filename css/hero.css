@@ -99,6 +99,16 @@ h6 {
   overflow-y: auto;
 }
 
+.description-carousel{
+  background-color: rgba(255,255,255,0.3);
+  backdrop-filter: blur(15px);
+  color: #012970;
+  margin-bottom: 1.5rem;
+}
+
+.description-carousel p{
+  color: #a70e00;
+}
 
 /*--------------------------------------------------------------
 # Sections
