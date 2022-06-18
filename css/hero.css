@@ -281,7 +281,7 @@ section {
   color: #e74a3b;
 }
 
-#pills-not-solved {
+#pills-not-solved-tab {
   color: #96332a;
 }
 
@@ -346,6 +346,7 @@ section {
   color: #fff;
   background: #4154f1;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  transition-delay: .2s;
 }
 
 .hero .btn-get-started span {
@@ -359,6 +360,11 @@ section {
   margin-left: 5px;
   font-size: 18px;
   transition: 0.3s;
+}
+
+.hero .btn-get-started:hover{
+  box-shadow: 0 0 10px #6b77e3c3, 0 0 20px #6b77e3c3, 0 0 30px #6b77e3c3;
+  transition-delay: .2s;
 }
 
 .hero .btn-get-started:hover i {
